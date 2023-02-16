@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'SFProDisplay', sans-serif ;
+    font-family: 'Barlow', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-Regular.woff),
+    url(../fonts/SFProDisplay-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-Medium.woff),
+    url(../fonts/SFProDisplay-Medium.woff2);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-Semibold.woff),
+    url(../fonts/SFProDisplay-Semibold.woff2);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-Bold.woff),
+    url(../fonts/SFProDisplay-Bold.woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-Light.woff),
+    url(../fonts/Barlow-Light.woff2);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-Regular.woff),
+    url(../fonts/Barlow-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-SemiBold.woff),
+    url(../fonts/Barlow-SemiBold.woff2);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-Bold.woff),
+    url(../fonts/Barlow-Bold.woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@import 'base/variables';
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-color;
+    color: #fff;
+}
