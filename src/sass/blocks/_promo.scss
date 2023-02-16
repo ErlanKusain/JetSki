@@ -1,0 +1,51 @@
+.promo {
+    padding-top: 78px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 870px 265px;
+        column-gap: 36px;
+    }
+    &__slider {
+        &-page {
+            position: relative;
+        }
+        &-img {
+            z-index: 1;
+        }
+        &-descr {
+            display: inline-block;
+            position: absolute;
+            top: 85px;
+            right: 150px;
+            width: 320px;
+            
+            font-family: 'SFProDisplay', sans-serif ;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 50px;
+            text-align: center;
+            z-index: 2;
+        }
+    }
+    .slick-prev {
+        position: absolute;
+        top: 150px;
+        left: 15px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .slick-next {
+        position: absolute;
+        top: 150px;
+        right: 15px;
+        border: none;
+        cursor: pointer;
+        background: none;
+        z-index: 3;
+    }
+    &__promotion {
+
+    }
+}
