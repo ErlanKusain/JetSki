@@ -45,7 +45,96 @@
         background: none;
         z-index: 3;
     }
-    &__promotion {
+    .promotion {
+        display: block;
+        border: 1px solid #C4C4C4;
+        &__header {
+            display: grid;
+            grid-template-columns: 90px 113px;
+            column-gap: 53px;
+            &--descr {
+                display: flex;
+                width: 90px;
+                height: 30px;
+                background-color: $main-color;
 
+                justify-content: center;
+                align-items: center;
+                
+                font-family: 'SFProDisplay', sans-serif ;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #fff;
+            }
+            &--price {
+                position: relative;
+                font-family: 'Barlow', sans-serif;
+                font-size: 27px;
+                font-weight: 700;
+                color: $main-color;
+                &::after {
+                    content: url(../img/icons/rub-first.svg);
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            &--price-overline {
+                position: relative;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: right;
+                color: #c4c4c4;
+                transform: translateX(-10px);
+                &::after {
+                    content: url(../img/icons/rub-second.svg);
+                    position: absolute;
+                    top: 0;
+                    right: -10px;
+                }
+                &::before {
+                    content: url(../img/icons/line-trough.svg);
+                    position: absolute;
+                    top: 0;
+                }
+            }
+        }
+        &__main {
+
+            &--img {
+                display: flex;
+                justify-content: center;
+                transform: translateX(-10%);
+            }
+            &--descr {
+                display: block;
+                width: 200px;
+                margin: 0 auto;
+
+                font-family: 'SFProDisplay', sans-serif ;
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+        &__footer {
+            display: block;
+            margin-top: 30px;
+            padding: 25px 0 25px 0;
+            width: 100%;
+            height: 99px;
+            background-color: #F0F0F4;
+
+            
+            font-family: 'SFProDisplay', sans-serif ;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            span {
+                font-weight: 600;
+                color: $main-color;
+            }
+        }
     }
 }
