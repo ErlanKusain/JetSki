@@ -116,14 +116,17 @@
                 font-size: 18px;
                 font-weight: 700;
                 text-align: center;
+                a {
+                    color: #000;
+                }
             }
         }
         &__footer {
             display: block;
-            margin-top: 30px;
+            margin-top: 25px;
             padding: 25px 0 25px 0;
             width: 100%;
-            height: 99px;
+            height: 100px;
             background-color: #F0F0F4;
 
             

@@ -1,0 +1,77 @@
+.part {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    &__tabs {
+        display: grid;
+        grid-template-columns: repeat(3,370px);
+        grid-template-rows: repeat(2,129px);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    &__tab {
+        display: grid;
+        grid-template-columns: 170px 130px;
+        column-gap: 20px;
+        border: 1px solid #c4c4c4;
+        padding: 20px 20px 20px 20px;
+        &:hover {
+            box-shadow: 5px 5px 35px 5px #C4C4C4;
+            transform: scale(1.01);
+        }
+        &--boat {
+            column-gap: unset;
+            padding-right: 70px;
+            img {
+                display: block;
+                width: 180px;
+                height: 91px;
+            }
+        }
+        &--sea-pro {
+            position: relative;
+            column-gap: 60px;
+            img {
+                position: absolute;
+                top: 10px;
+            }
+        }
+        &--snowmobile {
+            position: relative;
+            column-gap: unset;
+            img {
+                position: absolute;
+                top: 10px;
+            }
+        }
+        &--maverick {
+            column-gap: unset;
+        }
+        &--descr {
+            display: grid;
+            grid-template-rows: 28px 15px;
+            row-gap: 50px;
+        }
+        &--title {
+            font-family: 'SFProDisplay', sans-serif ;
+            font-size: 23px;
+            font-weight: 700;
+            color: #2F3035;
+        }
+        &--link {
+            position: relative;
+            font-family: 'SFProDisplay', sans-serif ;
+            font-size: 14px;
+            font-weight: 400;
+            color: #C4C4C4;
+            &::after {
+                content: url(../../img/icons/more.svg);
+                position: absolute;
+                top: 1px;
+                left: 75px;
+            }
+        }
+        &--img {
+             
+        }
+    }
+}
